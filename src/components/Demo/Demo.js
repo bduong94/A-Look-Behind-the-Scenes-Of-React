@@ -1,7 +1,8 @@
 import React from "react";
 
-const DemoOutput = (props) => {
-  return <p>This is new!</p>;
+const Demo = ({ show }) => {
+  console.log("INSIDE Demo");
+  return <p>{show ? "This is new!" : ""}</p>;
 };
 
-export default DemoOutput;
+export default React.memo(Demo);
